@@ -9,11 +9,13 @@
 	background-color: $pos;
 	overflow-x: hidden;
 	border-bottom: solid 8px $secondary;
+	box-shadow: 0 10px 55px rgba(0,0,0,0.2);
 
 	.logo {
 		display: block;
 		float: left;
-		max-width: 70%;
+		max-width: 50%;
+		margin-top: 8px;
 		img {
 			width: 100%;
 		}
@@ -87,10 +89,10 @@
 				a {
 
 					@extend .sans;
-					font-size: em-font(15px);
+					font-size: em-font(20px);
 					display: inline-block;
 					width: 100%;
-					color: $neg;
+					color: $pos;
 					padding: 25px 5px;
 					background-color: transparent;
 
@@ -100,7 +102,16 @@
 
 					&:hover, &:active {
 						color: $pos;
+						background-color: $primary;
+					}
+
+					@include break($d) {
+					font-size: em-font(15px);
+					color: $neg;
+					&:hover, &:active {
+						color: $pos;
 						background-color: $secondary;
+					}
 					}
 				}
 			}

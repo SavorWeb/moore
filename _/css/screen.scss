@@ -31,6 +31,10 @@ body {
 	color: $pos;
 }
 
+html, body {
+	overflow-x: hidden;
+}
+
 a {
 	color: $action;
 	text-decoration: none;
@@ -41,6 +45,31 @@ a {
 		@include force-wrap;
 	}
 }
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.padded {
+	padding: 2%;
+}
+
+.mohide {
+	display: none !important;
+	@include break($d) {
+		display: block !important;
+	}
+} 
 
 .typeset {
 	a {
@@ -98,6 +127,66 @@ a {
 		}
 	}
 }
+
+.side-photo {
+	margin-bottom: 15px;
+	img {
+		width: 100%;
+	}
+	p {
+		text-align: center;
+		span {
+			display: block;
+			clear: both;
+			font-weight: lighter;
+		}
+	}
+}
+
+.grey-bg {
+	p {
+		color: darken($pos, 10%);
+		margin-bottom: 25px;
+	}
+
+	@include break($d) {
+		h1, h2 {
+			color: $primary;
+		}
+		background-color: darken($pos, 5%);
+		p {color: $neg;}
+		box-shadow: 25rem 25rem 0 25rem darken($pos, 5%); 
+	}
+	&.padded {
+		@include break($d) {
+			padding: 4%;
+		}	
+	}
+	ul {
+		color: $neg;
+	}
+	.features {
+		width: 100%;
+		display: block;
+		clear: both;
+		li {
+			list-style-type: none;
+			width: 40%;
+			float: left;
+			background-color: $pos;
+			color: $neg;
+			text-align: center;
+			padding: 20px;
+			margin: 10px !important;
+			@include break($d) {
+				width: 30%;
+				background-color: $primary;
+				color: $pos;
+			}
+		}
+	}
+}
+
 ////////////
 // LAYOUT //
 ////////////
@@ -139,22 +228,37 @@ a {
 	padding: 0px 20px 10px;
 }
 
-.padded {
-	padding: 2%;
-}
-
 .border-b {
 	border-bottom: 2px solid $neg;
-	padding: 10px 0;
+	padding: 10px 0 25px;
 	margin-bottom: 15px;
 	&:last-of-type {
 		border-bottom-width: 0;
 	}
+	small {
+		margin-bottom: 5px;
+		display: block;
+	}
 }
 
 footer {
+	box-shadow: 0 -10px 55px rgba(0,0,0,0.2);
+	border-top: solid $secondary 8px;
 	background-color: $pos;
 	color: $neg;
+	padding: 20px 0;
+	color: #aaa;
+	font-size: 12px;
+	font-weight: lighter;
+	position: relative;
+	z-index: 5;
+	a {
+		text-transform: uppercase;
+		color: #ccc;
+	}
+	small {
+		float: right;
+	}
 }
 
 /* ::Import styles */

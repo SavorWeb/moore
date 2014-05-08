@@ -41,6 +41,9 @@
 
 // Use on parent element to style elements within. E.g an article page
 .typeset {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
 	.headline	{ @extend .as-heading__headline; 	@extend .as-heading__headline--typeset; } 
 	h1			{ @extend .as-heading__largest; 	@extend .as-heading__largest--typeset; } 	
 	h2 			{ @extend .as-heading__large; 		@extend .as-heading__large--typeset; } 	

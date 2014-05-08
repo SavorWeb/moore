@@ -22,19 +22,19 @@
 	<header class="pagehead pullwidth">
 		<section class="row">
 
-			<a class="logo" href="/"><img src="_/img/logo.png" alt=""></a>
+			<a class="logo" href="/moore/"><img src="_/img/logo.png" alt=""></a>
 
 			<button type="button" role="button" id="nav-toggle" class="lines-button x2"><span class="lines"></span></button>
 
 			<nav class="nav-collapse">
 				<ul>
-					<li><a href="/news">news</a></li>
-					<li><a href="/contact">contact</a></li>
-					<li><a href="/testimonials">testimonials</a></li>
-					<li><a href="/residential">residential</a></li>
-					<li><a href="/commercial">commercial</a></li>
-					<li><a href="/about">about</a></li>
-					<li><a href="/">home</a></li>
+					<li><a href="/moore/news">news</a></li>
+					<li><a href="/moore/contact">contact</a></li>
+					<li><a href="/moore/testimonials">testimonials</a></li>
+					<li><a href="/moore/residential">residential</a></li>
+					<li><a href="/moore/commercial">commercial</a></li>
+					<li><a href="/moore/about">about</a></li>
+					<li class="mohide"><a href="/moore/">home</a></li>
 				</ul>
 			</nav>
 	</section>
