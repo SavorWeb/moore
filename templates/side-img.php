@@ -1,35 +1,38 @@
 <?php include("_/inc/head.php"); ?>
 
 <div class="row">
-	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid">
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">Jim Moore,<span>President</span></p>
+	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
+			<p>caption</p>
 		</div>
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">Darren Moore,<span>Journeyman Plumber</span></p>
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
+			<p>caption</p>
 		</div>
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">Melanie Moore,<span>Office Administrator</span></p>
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
+			<p>caption</p>
 		</div>
 	</div>
 	<div id="content" class="colspan12-9 colspan6-4 colspan2-2 as-grid padded typeset grey-bg editable">
 
-		<h1>Quality commercial and residential plumbing since 1992</h1>
+		<h1>Residential Plumbing</h1>
 		<p>
-		Moore Plumbing Company believes in bringing our best to every job we do, large or small.  Our mission is to provide exceptional plumbing services that exceed our customer's expectation in the areas of our service, knowledge and value.  Through continuing education, product research and three generations of experience, you can be confident in the professional service we provide.</p>
+		Whether you are building a new home, remodeling your existing home or are in need of plumbing repairs, we have got you covered.  Our knowledge of construction methods and industry standards and  our product knowledge means whatever project you are doing is in good hands.</p>
+		<h2>Some of our services include:</h2>
+		<ul class="clearfix">
+			<li class="features">Fixture Selection</li>
+			<li class="features">Plumbing System Design</li>
+			<li class="features">On Demand Hot Water Heaters</li>
+			<li class="features">Radiant In-Floor Heat Systems</li>
+			<li class="features">Snow Melt Systems</li>
+			<li class="features">Plumbing Repairs</li>
+		</ul>
 
-		<img src="http://www.placehold.it/400x200" alt="">
-		<h2>James Moore: President</h2>
-		<p>Jim brings to our company a wealth of knowledge and expertise.  He began his career in the union and attended years of schooling to obtain licenses and certifications. He worked as an industrial plumber for 8 years and he was the job foreman at waste water treatment plants, water treatment plants and large irrigation projects.  He has great skill operating heavy equipment and worked as a backhoe and dump truck operator for three years full time.  He moved to North Idaho in 1991 to start his own company with his wife and family of 3.  He has kept up a summer tradition of Salmon fishing in Canada for the past 13 years, he loves to camp and hunt, is a great cook and loves time spent with his kids and grandchildren. </p>
-
-		<h2>Darren Moore: Journeyman Plumber </h2>
-		<p>What most people don’t know is it takes a sharp, mathematical mind, an ability to problem solve and ambition to become a great plumber.  Darren possesses all of these traits and more.  He has been a licensed journeyman for six years and also holds a medical gas license.  He frequently attends classes and workshops to stay current on the vast changes happening in the plumbing industry today.  He works hard and takes pride in the quality of his work.   He has a wife who is a Dental Hygienist and an adorable daughter.  Together they love to camp, hunt, walk with their 2 black labs, and travel.  </p>
-
-		<h2>Melanie Moore: Secretary/Treasurer</h2>
-		<p>If you want to get excited about designing the perfect kitchen and luxurious bathroom….you need to talk to Melanie.  She will meet you for a cup of coffee and fill you in on all kinds of ideas on how to go about creating functional and well designed spaces. She seems to never tire of looking for the perfect fixture that her customer will love.   Aside from the creative side of plumbing, she keeps all of our papers in the right place, pays our bills, keeps up on our licensing and insurance requirements and makes sure we cross all of our “T’s” and dot all of our “I’s”.   She loves spending time with her family and friends, enjoys decorating, entertaining, reading, and travel.</p>  
+<p>Each of our plumbers attend yearly continuing education classes required to maintain our professional licenses.
+</p>
+<p>We are passionate about energy efficient products, interior design styles, and products that are highly rated and proven to perform well.  Our customers want their plumbing to look good and perform flawlessly.  That is why we will only install products with a proven track record.</p>  
 	</div>
 </div>
 

@@ -285,6 +285,8 @@ textarea {
   overflow: hidden;
   visibility: hidden;
   position: relative;
+  border: 10px white solid;
+  background-color: white;
 }
 .swipe img {
   width: 100%;
@@ -297,6 +299,13 @@ textarea {
 
 .swipe-wrap > div {
   float: left;
+  width: 100%;
+  position: relative;
+}
+
+.swipe-wrap > a {
+  float: left;
+  display: block;
   width: 100%;
   position: relative;
 }
@@ -546,10 +555,21 @@ a:not(> img) {
   }
 }
 .typeset blockquote {
-  padding: 5%;
   clear: both;
-  background-color: #6d6e71;
   color: white;
+  position: relative;
+}
+.lt-ie9 .typeset blockquote {
+  clear: none;
+  color: black;
+  float: right;
+}
+@media screen and (min-width: 900px) {
+  .typeset blockquote {
+    clear: none;
+    color: black;
+    float: right;
+  }
 }
 .typeset blockquote:before {
   content: "“ ";
@@ -557,22 +577,13 @@ a:not(> img) {
 .typeset blockquote:after {
   content: " ”";
 }
-.lt-ie9 .typeset blockquote {
-  clear: none;
-  float: right;
-}
-@media screen and (min-width: 420px) {
-  .typeset blockquote {
-    clear: none;
-    float: right;
-  }
-}
 
 .side-photo {
   margin-bottom: 15px;
 }
 .side-photo img {
   width: 100%;
+  border: white 5px solid;
 }
 .side-photo p {
   text-align: center;
@@ -619,13 +630,16 @@ a:not(> img) {
 }
 .grey-bg ul {
   color: black;
-}
-.grey-bg .features {
   width: 100%;
   display: block;
   clear: both;
+  overflow: hidden;
+  *zoom: 1;
 }
-.grey-bg .features li {
+.grey-bg ul li {
+  list-style-type: circle;
+}
+.grey-bg li.features {
   list-style-type: none;
   width: 40%;
   float: left;
@@ -635,13 +649,13 @@ a:not(> img) {
   padding: 20px;
   margin: 10px !important;
 }
-.lt-ie9 .grey-bg .features li {
+.lt-ie9 .grey-bg li.features {
   width: 30%;
   background-color: #0e76bc;
   color: white;
 }
 @media screen and (min-width: 900px) {
-  .grey-bg .features li {
+  .grey-bg li.features {
     width: 30%;
     background-color: #0e76bc;
     color: white;
@@ -681,17 +695,23 @@ a:not(> img) {
   padding: 0px 20px 10px;
 }
 
-.border-b {
+.border-b, article {
   border-bottom: 2px solid black;
   padding: 10px 0 25px;
   margin-bottom: 15px;
 }
-.border-b:last-of-type {
+.border-b:last-of-type, article:last-of-type {
   border-bottom-width: 0;
 }
-.border-b small {
+.border-b small, article small {
   margin-bottom: 5px;
   display: block;
+}
+
+article {
+  clear: both;
+  overflow: hidden;
+  *zoom: 1;
 }
 
 footer {
@@ -752,6 +772,7 @@ em, i, q {
 label, legend, select {
   display: block;
   padding: 10px 0;
+  color: black;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -801,11 +822,11 @@ input[type="checkbox"]:focus {
 input, textarea {
   width: 100%;
   border: 0;
-  background: #939497;
+  background: white;
   box-shadow: none;
   padding: 10px;
   outline: 0;
-  color: white;
+  color: black;
 }
 input:focus, textarea:focus {
   outline: 1px solid #0e76bc;

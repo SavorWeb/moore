@@ -1,18 +1,18 @@
 <?php include("_/inc/head.php"); ?>
 
 <div class="row">
-	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid">
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">caption</p>
+	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
+			<p>caption</p>
 		</div>
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">caption</p>
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
+			<p>caption</p>
 		</div>
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">caption</p>
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
+			<p>caption</p>
 		</div>
 	</div>
 	<div id="content" class="colspan12-9 colspan6-4 colspan2-2 as-grid padded typeset grey-bg editable">
@@ -21,7 +21,7 @@
 		<p>
 		Whether you are building a new home, remodeling your existing home or are in need of plumbing repairs, we have got you covered.  Our knowledge of construction methods and industry standards and  our product knowledge means whatever project you are doing is in good hands.</p>
 		<h2>Some of our services include:</h2>
-		<ul class="clearfix features">
+		<ul class="clearfix">
 			<li>Fixture Selection</li>
 			<li>Plumbing System Design</li>
 			<li>On Demand Hot Water Heaters</li>

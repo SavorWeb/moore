@@ -3,6 +3,10 @@
   visibility: hidden;
   position: relative;
   img {width: 100%;}
+
+	border: 10px $pos solid;
+	background-color: $pos;
+
 }
 .swipe-wrap {
   overflow: hidden;
@@ -10,6 +14,13 @@
 }
 .swipe-wrap > div {
   float:left;
+  width:100%;
+  position: relative;
+}
+
+.swipe-wrap > a {
+  float:left;
+  display: block;
   width:100%;
   position: relative;
 }

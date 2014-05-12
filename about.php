@@ -1,18 +1,18 @@
 <?php include("_/inc/head.php"); ?>
 
 <div class="row">
-	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid">
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">Jim Moore,<span>President</span></p>
+	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
+			<p>Jim Moore,<span>President</span></p>
 		</div>
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">Darren Moore,<span>Journeyman Plumber</span></p>
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
+			<p>Darren Moore,<span>Journeyman Plumber</span></p>
 		</div>
-		<div class="side-photo">
-			<img class="editable" alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
-			<p class="editable">Melanie Moore,<span>Office Administrator</span></p>
+		<div class="side-photo repeatable">
+			<img alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
+			<p>Melanie Moore,<span>Office Administrator</span></p>
 		</div>
 	</div>
 	<div id="content" class="colspan12-9 colspan6-4 colspan2-2 as-grid padded typeset grey-bg editable">

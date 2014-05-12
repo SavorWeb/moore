@@ -111,19 +111,19 @@ a {
 	}
 
 	blockquote {
-		padding: 5%;
+		@include break($d) {
+			clear: none;
+			color: $neg;
+			float: right;
+		}
 		clear: both;
-		background-color: $secondary;
 		color: $pos;
+		position: relative;
 		&:before {
 			content: "“ ";
 		}
 		&:after {
 			content: " ”";	
-		}
-		@include break($b) {
-			clear: none;
-			float: right;
 		}
 	}
 }
@@ -132,6 +132,7 @@ a {
 	margin-bottom: 15px;
 	img {
 		width: 100%;
+		border: $pos 5px solid;
 	}
 	p {
 		text-align: center;
@@ -164,27 +165,30 @@ a {
 	}
 	ul {
 		color: $neg;
-	}
-	.features {
 		width: 100%;
 		display: block;
 		clear: both;
+		@include clearfix;
 		li {
-			list-style-type: none;
-			width: 40%;
-			float: left;
-			background-color: $pos;
-			color: $neg;
-			text-align: center;
-			padding: 20px;
-			margin: 10px !important;
-			@include break($d) {
-				width: 30%;
-				background-color: $primary;
-				color: $pos;
-			}
+			list-style-type: circle;
 		}
 	}
+	li.features {
+		list-style-type: none;
+		width: 40%;
+		float: left;
+		background-color: $pos;
+		color: $neg;
+		text-align: center;
+		padding: 20px;
+		margin: 10px !important;
+		@include break($d) {
+			width: 30%;
+			background-color: $primary;
+			color: $pos;
+		}
+	}
+
 }
 
 ////////////
@@ -239,6 +243,12 @@ a {
 		margin-bottom: 5px;
 		display: block;
 	}
+}
+
+article {
+	@extend .border-b;
+	clear: both;
+	@include clearfix;
 }
 
 footer {
