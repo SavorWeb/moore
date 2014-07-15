@@ -1,27 +1,27 @@
 <?php include("_/inc/head.php"); ?>
 
 <div class="row">
-	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
+	<div id="photo-left" class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
-			<p>Jim Moore,<span>President</span></p>
+			<img alt="photo" id="photo1" src="media/photos/jim-mel.jpg" alt="">
+			<p>Jim & Melanie Moore</p>
 		</div>
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
-			<p>Darren Moore,<span>Journeyman Plumber</span></p>
+			<img alt="photo" id="photo2" src="media/photos/baby.jpg" alt="">
+			<p>Darren Moore and Family</p>
 		</div>
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
-			<p>Melanie Moore,<span>Office Administrator</span></p>
+			<img alt="photo" id="photo3" src="media/photos/salmon.jpg" alt="">
+			<p>Jim catches a Salmon</p>
 		</div>
 	</div>
 	<div id="content" class="colspan12-9 colspan6-4 colspan2-2 as-grid padded typeset grey-bg editable">
 
-		<h1>Quality commercial and residential plumbing since 1992</h1>
+		<h1>Quality Commercial And Residential Plumbing Since 1992</h1>
 		<p>
 		Moore Plumbing Company believes in bringing our best to every job we do, large or small.  Our mission is to provide exceptional plumbing services that exceed our customer's expectation in the areas of our service, knowledge and value.  Through continuing education, product research and three generations of experience, you can be confident in the professional service we provide.</p>
 
-		<img src="http://www.placehold.it/400x200" alt="">
+		<img src="media/photos/moen-bath.jpg" alt="">
 		<h2>James Moore: President</h2>
 		<p>Jim brings to our company a wealth of knowledge and expertise.  He began his career in the union and attended years of schooling to obtain licenses and certifications. He worked as an industrial plumber for 8 years and he was the job foreman at waste water treatment plants, water treatment plants and large irrigation projects.  He has great skill operating heavy equipment and worked as a backhoe and dump truck operator for three years full time.  He moved to North Idaho in 1991 to start his own company with his wife and family of 3.  He has kept up a summer tradition of Salmon fishing in Canada for the past 13 years, he loves to camp and hunt, is a great cook and loves time spent with his kids and grandchildren. </p>
 

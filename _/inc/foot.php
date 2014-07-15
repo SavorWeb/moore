@@ -1,7 +1,7 @@
 <footer>
 <div class="row">
-<a href="#">View our Fixture Affiliates</a>
-<small>© Moore PLumbing. All rights reserved.</small>
+<a href="/moore/affiliates">View our Fixture Affiliates</a>
+<small>© Moore Plumbing. All rights reserved.</small>
 </div>
 		</footer>	
 

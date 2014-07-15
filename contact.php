@@ -1,23 +1,23 @@
 <?php include("_/inc/head.php"); ?>
 
 <div class="row">
-	<div class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
+	<div id="photo-left" class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo1" src="http://www.placehold.it/400x300" alt="">
+			<img alt="photo" id="photo1" src="media/photos/grohe-tub.jpg" alt="">
 			<p>caption</p>
 		</div>
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo2" src="http://www.placehold.it/400x300" alt="">
+			<img alt="photo" id="photo2" src="media/photos/moen-shower.jpg" alt="">
 			<p>caption</p>
 		</div>
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo3" src="http://www.placehold.it/400x300" alt="">
+			<img alt="photo" id="photo3" src="media/photos/grohe-faucet.jpg" alt="">
 			<p>caption</p>
 		</div>
 	</div>
 	<div id="contact" class="colspan12-9 colspan6-4 colspan2-2 as-grid padded typeset grey-bg">
 		
-		<h1>Contact us!</h1>
+		<h1>Contact Us!</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, necessitatibus, minima, possimus, fugiat libero quisquam laborum id culpa assumenda molestiae et perspiciatis eos doloremque ex laudantium delectus porro. Hic, quam?</p>
 
 

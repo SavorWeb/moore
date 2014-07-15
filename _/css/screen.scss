@@ -28,6 +28,7 @@ html {
 body {
 	@extend .font-body;
 	background: $primary;
+	background-image: url('../img/blue-wood.png');
 	color: $pos;
 }
 
@@ -59,6 +60,15 @@ a {
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
+
+.no-left {
+	padding-left: 0 !important;
+}
+
+.clear {
+	clear: both !important;
+	float: none !important;
+}
 
 .padded {
 	padding: 2%;
@@ -119,6 +129,7 @@ a {
 		clear: both;
 		color: $pos;
 		position: relative;
+		margin-bottom: 10px !important;
 		&:before {
 			content: "“ ";
 		}
@@ -128,11 +139,31 @@ a {
 	}
 }
 
+.testimony, article {
+	@include clearfix;
+	clear: both;
+	margin-bottom: 15px;
+	padding: 10px 0;
+	@include break($d) {
+		&:nth-of-type(even) {
+			background-color: transparentize($pos, 0.2);
+			box-shadow: 25rem 0 0 0 transparentize($pos, 0.2), -25rem 0 0 0 transparentize($pos, 0.2); 
+		}
+		img {
+			max-width: 30%;
+		}
+	}
+	blockquote {
+		clear: none;
+		float: none;
+	}
+}
+
 .side-photo {
 	margin-bottom: 15px;
 	img {
 		width: 100%;
-		border: $pos 5px solid;
+		border: $pos 5px double;
 	}
 	p {
 		text-align: center;
@@ -145,9 +176,14 @@ a {
 }
 
 .grey-bg {
+	overflow: hidden;
 	p {
 		color: darken($pos, 10%);
 		margin-bottom: 25px;
+	}
+	
+	img {
+		border: double $pos 5px;
 	}
 
 	@include break($d) {
@@ -164,13 +200,18 @@ a {
 		}	
 	}
 	ul {
-		color: $neg;
 		width: 100%;
 		display: block;
 		clear: both;
 		@include clearfix;
 		li {
-			list-style-type: circle;
+			list-style-type: disc;
+		}
+	}
+	ol, ul {
+		padding-left: 10px;
+		@include break($d) {
+			color: $neg;
 		}
 	}
 	li.features {
@@ -233,7 +274,7 @@ a {
 }
 
 .border-b {
-	border-bottom: 2px solid $neg;
+	//border-bottom: 2px double $neg;
 	padding: 10px 0 25px;
 	margin-bottom: 15px;
 	&:last-of-type {
@@ -267,6 +308,17 @@ footer {
 		color: #ccc;
 	}
 	small {
+		float: right;
+	}
+}
+
+#new {
+	position: relative;
+	small {
+		color: transparentize($pos, 0.5);
+		position: absolute;
+		top: 15px;
+		right: 10px;
 		float: right;
 	}
 }

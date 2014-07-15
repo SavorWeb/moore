@@ -200,9 +200,9 @@ textarea {
   color: white;
   padding: 25px 5px;
   background-color: transparent;
-  transition: background-color 0.2s ease-in-out;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
   color: white;
@@ -211,19 +211,51 @@ textarea {
 .lt-ie9 .pagehead .nav-collapse ul li a {
   font-size: 0.9375em;
   color: black;
+  position: relative;
+}
+.lt-ie9 .pagehead .nav-collapse ul li a:after {
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #6d6e71 transparent;
 }
 .lt-ie9 .pagehead .nav-collapse ul li a:hover, .lt-ie9 .pagehead .nav-collapse ul li a:active {
-  color: white;
-  background-color: #6d6e71;
+  color: #0e76bc;
+  background-color: transparent;
+  text-shadow: 0 0 1px #6fbff4;
+}
+.lt-ie9 .pagehead .nav-collapse ul li a:hover:after, .lt-ie9 .pagehead .nav-collapse ul li a:active:after {
+  bottom: 0px;
 }
 @media screen and (min-width: 900px) {
   .pagehead .nav-collapse ul li a {
     font-size: 0.9375em;
     color: black;
+    position: relative;
+  }
+  .pagehead .nav-collapse ul li a:after {
+    position: absolute;
+    bottom: -10px;
+    left: 33%;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #6d6e71 transparent;
   }
   .pagehead .nav-collapse ul li a:hover, .pagehead .nav-collapse ul li a:active {
-    color: white;
-    background-color: #6d6e71;
+    color: #0e76bc;
+    background-color: transparent;
+    text-shadow: 0 0 1px #6fbff4;
+  }
+  .pagehead .nav-collapse ul li a:hover:after, .pagehead .nav-collapse ul li a:active:after {
+    bottom: 0px;
   }
 }
 
@@ -285,7 +317,7 @@ textarea {
   overflow: hidden;
   visibility: hidden;
   position: relative;
-  border: 10px white solid;
+  border: 10px white double;
   background-color: white;
 }
 .swipe img {
@@ -437,6 +469,7 @@ html {
 
 body {
   background: #0e76bc;
+  background-image: url("../img/blue-wood.png");
   color: white;
 }
 
@@ -485,6 +518,15 @@ a:not(> img) {
 }
 
 /* close commented backslash hack */
+.no-left {
+  padding-left: 0 !important;
+}
+
+.clear {
+  clear: both !important;
+  float: none !important;
+}
+
 .padded {
   padding: 2%;
 }
@@ -558,6 +600,7 @@ a:not(> img) {
   clear: both;
   color: white;
   position: relative;
+  margin-bottom: 10px !important;
 }
 .lt-ie9 .typeset blockquote {
   clear: none;
@@ -578,12 +621,40 @@ a:not(> img) {
   content: " ”";
 }
 
+.testimony, article {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.lt-ie9 .testimony:nth-of-type(even), .lt-ie9 article:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 25rem 0 0 0 rgba(255, 255, 255, 0.8), -25rem 0 0 0 rgba(255, 255, 255, 0.8);
+}
+.lt-ie9 .testimony img, .lt-ie9 article img {
+  max-width: 30%;
+}
+@media screen and (min-width: 900px) {
+  .testimony:nth-of-type(even), article:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 25rem 0 0 0 rgba(255, 255, 255, 0.8), -25rem 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  .testimony img, article img {
+    max-width: 30%;
+  }
+}
+.testimony blockquote, article blockquote {
+  clear: none;
+  float: none;
+}
+
 .side-photo {
   margin-bottom: 15px;
 }
 .side-photo img {
   width: 100%;
-  border: white 5px solid;
+  border: white 5px double;
 }
 .side-photo p {
   text-align: center;
@@ -594,9 +665,15 @@ a:not(> img) {
   font-weight: lighter;
 }
 
+.grey-bg {
+  overflow: hidden;
+}
 .grey-bg p {
   color: #e6e6e6;
   margin-bottom: 25px;
+}
+.grey-bg img {
+  border: double white 5px;
 }
 .lt-ie9 .grey-bg {
   background-color: #f2f2f2;
@@ -629,7 +706,6 @@ a:not(> img) {
   }
 }
 .grey-bg ul {
-  color: black;
   width: 100%;
   display: block;
   clear: both;
@@ -637,7 +713,18 @@ a:not(> img) {
   *zoom: 1;
 }
 .grey-bg ul li {
-  list-style-type: circle;
+  list-style-type: disc;
+}
+.grey-bg ol, .grey-bg ul {
+  padding-left: 10px;
+}
+.lt-ie9 .grey-bg ol, .lt-ie9 .grey-bg ul {
+  color: black;
+}
+@media screen and (min-width: 900px) {
+  .grey-bg ol, .grey-bg ul {
+    color: black;
+  }
 }
 .grey-bg li.features {
   list-style-type: none;
@@ -696,7 +783,6 @@ a:not(> img) {
 }
 
 .border-b, article {
-  border-bottom: 2px solid black;
   padding: 10px 0 25px;
   margin-bottom: 15px;
 }
@@ -731,6 +817,17 @@ footer a {
   color: #ccc;
 }
 footer small {
+  float: right;
+}
+
+#new {
+  position: relative;
+}
+#new small {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 15px;
+  right: 10px;
   float: right;
 }
 
@@ -884,8 +981,8 @@ form button {
 }
 
 .as-blockquote, .as-blockquote--typeset, .typeset blockquote {
-  font-size: 1.5625em;
-  line-height: 1.232em;
+  font-size: 1.125em;
+  line-height: 1.2222222em;
   line-height: normal;
 }
 .as-blockquote p, .as-blockquote--typeset p, .typeset blockquote p {
@@ -947,7 +1044,7 @@ form button {
 }
 
 .as-blockquote--typeset, .typeset blockquote {
-  margin: 1.056em 0;
+  margin: 1.4666667em 0;
 }
 
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {

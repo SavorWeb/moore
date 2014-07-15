@@ -1,30 +1,28 @@
 {
   "autoPrefixer": null,
-  "convertHtmlExtension": ".html",
-  "convertHtmlOutput": null,
+  "convertHtml": {
+    "extension": ".html",
+    "relativePaths": false
+  },
   "customRuby": false,
   "customRubyPath": null,
   "customTodos": null,
   "debug": false,
   "domain": null,
   "followLeader": true,
-  "ftpSettings": {
-    "host": "client.savorweb.com",
-    "password": "TwoCre@t1ve",
-    "path": "/moore/",
-    "port": 21,
-    "secure": false,
-    "username": "clie4036"
-  },
   "gitHubPages": null,
-  "ignoreDir": "ignore",
+  "ignoreDir": [
+    "ignore"
+  ],
   "less": null,
   "lintScripts": false,
   "modelSource": null,
   "optimiseImages": true,
   "optimiseSVG": true,
   "password": null,
-  "preprocessorLocations": "_",
+  "preprocessorLocations": [
+    "_"
+  ],
   "preprocessorScriptOutput": "_/js",
   "preprocessorStyleOutput": "_/css",
   "projectDescription": "Moore Plumbing",
