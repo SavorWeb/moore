@@ -3,8 +3,8 @@
 <div class="row">
 	<div id="photo-left" class="colspan12-3 colspan6-2 padded colspan2-2 as-grid editable">
 		<div class="side-photo repeatable">
-			<img alt="photo" id="photo1" src="media/photos/master-bath.jpg" alt="">
-			<p>Master Bath</p>
+			<img alt="photo" id="photo1" src="media/photos/bubble-bath.jpg" alt="">
+			<p>Relaxation</p>
 		</div>
 		<div class="side-photo repeatable">
 			<img alt="photo" id="photo2" src="media/photos/heat-tubes.jpg" alt="">

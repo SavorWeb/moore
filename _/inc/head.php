@@ -30,6 +30,7 @@
 				<ul>
 					<li><a href="/moore/news">news</a></li>
 					<li><a href="/moore/contact">contact</a></li>
+					<li><a href="/moore/affiliates">Affiliates</a></li>
 					<li><a href="/moore/testimonials">testimonials</a></li>
 					<li><a href="/moore/residential">residential</a></li>
 					<li><a href="/moore/commercial">commercial</a></li>
@@ -39,3 +40,4 @@
 			</nav>
 	</section>
 </header>
+<div class="wood-bg">

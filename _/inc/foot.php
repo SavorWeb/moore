@@ -1,6 +1,7 @@
+</div>
 <footer>
 <div class="row">
-<a href="/moore/affiliates">View our Fixture Affiliates</a>
+<a style="color:black;" href="/moore/affiliates">View our Fixture Affiliates</a>
 <small>© Moore Plumbing. All rights reserved.</small>
 </div>
 		</footer>	

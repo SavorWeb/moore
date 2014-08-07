@@ -95,16 +95,16 @@ textarea {
   width: 100%;
 }
 .lt-ie9 .pagehead .logo {
-  width: 20%;
-  margin: 9px 0 0;
+  width: 25%;
+  margin: 21px 0 0;
 }
 .lt-ie9 .pagehead .logo img {
   max-width: 300px;
 }
 @media screen and (min-width: 900px) {
   .pagehead .logo {
-    width: 20%;
-    margin: 9px 0 0;
+    width: 25%;
+    margin: 21px 0 0;
   }
   .pagehead .logo img {
     max-width: 300px;
@@ -141,7 +141,7 @@ textarea {
   padding: 0 500%;
 }
 .lt-ie9 .pagehead .nav-collapse {
-  width: 80%;
+  width: 75%;
   margin: 0;
   padding: 0;
   clear: none;
@@ -151,7 +151,7 @@ textarea {
 }
 @media screen and (min-width: 900px) {
   .pagehead .nav-collapse {
-    width: 80%;
+    width: 75%;
     margin: 0;
     padding: 0;
     clear: none;
@@ -198,7 +198,7 @@ textarea {
   display: inline-block;
   width: 100%;
   color: white;
-  padding: 25px 5px;
+  padding: 45px 0;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -468,9 +468,13 @@ html {
 }
 
 body {
+  background: #fff;
+  color: white;
+}
+
+.wood-bg {
   background: #0e76bc;
   background-image: url("../img/blue-wood.png");
-  color: white;
 }
 
 html, body {
@@ -493,6 +497,14 @@ a:not(> img) {
   white-space: -moz-pre-wrap;
   white-space: -hp-pre-wrap;
   word-wrap: break-word;
+}
+
+.home-page {
+  font-size: 80%;
+}
+
+#slider {
+  max-height: 585px;
 }
 
 .clearfix:after {
@@ -632,16 +644,26 @@ a:not(> img) {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 25rem 0 0 0 rgba(255, 255, 255, 0.8), -25rem 0 0 0 rgba(255, 255, 255, 0.8);
 }
-.lt-ie9 .testimony img, .lt-ie9 article img {
-  max-width: 30%;
+.lt-ie9 .testimony figure figcaption, .lt-ie9 article figure figcaption {
+  color: #000;
+}
+.lt-ie9 .testimony figure img, .lt-ie9 article figure img {
+  margin: 0 !important;
+  width: 100% !important;
+  float: none !important;
 }
 @media screen and (min-width: 900px) {
   .testimony:nth-of-type(even), article:nth-of-type(even) {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 25rem 0 0 0 rgba(255, 255, 255, 0.8), -25rem 0 0 0 rgba(255, 255, 255, 0.8);
   }
-  .testimony img, article img {
-    max-width: 30%;
+  .testimony figure figcaption, article figure figcaption {
+    color: #000;
+  }
+  .testimony figure img, article figure img {
+    margin: 0 !important;
+    width: 100% !important;
+    float: none !important;
   }
 }
 .testimony blockquote, article blockquote {
@@ -713,7 +735,7 @@ a:not(> img) {
   *zoom: 1;
 }
 .grey-bg ul li {
-  list-style-type: disc;
+  margin: 0 0 0 6px !important;
 }
 .grey-bg ol, .grey-bg ul {
   padding-left: 10px;

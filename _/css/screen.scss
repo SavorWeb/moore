@@ -27,9 +27,13 @@ html {
 
 body {
 	@extend .font-body;
+	background: #fff;
+	color: $pos;
+}
+
+.wood-bg {
 	background: $primary;
 	background-image: url('../img/blue-wood.png');
-	color: $pos;
 }
 
 html, body {
@@ -45,6 +49,14 @@ a {
 	&:not(>img) {
 		@include force-wrap;
 	}
+}
+
+.home-page {
+	font-size: 80%;
+}
+
+#slider {
+	max-height: 585px;
 }
 
 .clearfix:after {
@@ -149,8 +161,15 @@ a {
 			background-color: transparentize($pos, 0.2);
 			box-shadow: 25rem 0 0 0 transparentize($pos, 0.2), -25rem 0 0 0 transparentize($pos, 0.2); 
 		}
-		img {
-			max-width: 30%;
+		figure {
+			figcaption {
+				color: #000;
+			}
+			img {
+				margin: 0 !important;
+				width: 100% !important;
+				float: none !important;
+			}
 		}
 	}
 	blockquote {
@@ -205,7 +224,8 @@ a {
 		clear: both;
 		@include clearfix;
 		li {
-			list-style-type: disc;
+			margin: 0 0 0 6px !important;
+
 		}
 	}
 	ol, ul {

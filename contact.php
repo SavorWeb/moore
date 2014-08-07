@@ -18,7 +18,7 @@
 	<div id="contact" class="colspan12-9 colspan6-4 colspan2-2 as-grid padded typeset grey-bg">
 		
 		<h1>Contact Us!</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, necessitatibus, minima, possimus, fugiat libero quisquam laborum id culpa assumenda molestiae et perspiciatis eos doloremque ex laudantium delectus porro. Hic, quam?</p>
+		<p>Thank you for visiting our website! Feel free to call us directly to discuss your needs, or simply fill out the form below and we will follow up with you as soon as possible.</p>
 
 
 <?php if(isset($hasError) || isset($captchaError) ) { ?>
